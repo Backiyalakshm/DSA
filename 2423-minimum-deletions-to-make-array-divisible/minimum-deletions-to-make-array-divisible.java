@@ -6,7 +6,6 @@ class Solution {
         int intial = numsDivide[0]; 
         for(int i = 1 ; i < m; i++){
             intial = gcd(intial, numsDivide[i]);
-            
          }
          for(int i = 0; i < n; i++){
             if(intial % nums[i] == 0){
