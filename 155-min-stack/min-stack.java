@@ -1,4 +1,4 @@
-class Pair {
+class Pair{
     int x, y;
     Pair(int x, int y) {
         this.x = x;
@@ -6,7 +6,7 @@ class Pair {
     }
 }
 class MinStack {
-    Stack < Pair > st;
+    Stack<Pair> st;
 
    
     public MinStack() {
@@ -17,7 +17,7 @@ class MinStack {
        int min;
         if (st.isEmpty()) {
             min = val;
-        } else {
+        } else{
             min = Math.min(st.peek().y, val);
         }
         st.push(new Pair(val, min)); 
@@ -35,6 +35,8 @@ class MinStack {
          return st.peek().y;
     }
 }
+
+
 
 /**
  * Your MinStack object will be instantiated and called as such:
