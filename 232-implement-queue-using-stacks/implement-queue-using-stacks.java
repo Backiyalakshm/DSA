@@ -11,7 +11,7 @@ class MyQueue {
     }
     
     public int pop() {
-        peek(); // Ensure s2 has the correct order
+       peek();
         return s2.pop();
     }
     
