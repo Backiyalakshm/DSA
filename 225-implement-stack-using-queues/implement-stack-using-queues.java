@@ -1,6 +1,6 @@
 class MyStack {
 
-       Queue<Integer> q1 = new LinkedList<>();
+    Queue<Integer> q1 = new LinkedList<>();
     Queue<Integer> q2 = new LinkedList<>();
 
     public MyStack() {
@@ -11,7 +11,7 @@ class MyStack {
          q2.add(x);
         while (!q1.isEmpty()) {
             q2.add(q1.remove());
-    }
+        }
     
      Queue<Integer> temp = q1;
         q1 = q2;
